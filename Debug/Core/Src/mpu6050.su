@@ -3,4 +3,4 @@
 ../Core/Src/mpu6050.c:97:6:MPU6050_Read_Gyro	40	static
 ../Core/Src/mpu6050.c:118:6:MPU6050_Read_Temp	40	static
 ../Core/Src/mpu6050.c:130:6:MPU6050_Read_All	112	static
-../Core/Src/mpu6050.c:178:8:Kalman_getAngle	104	static
+../Core/Src/mpu6050.c:180:8:Kalman_getAngle	104	static

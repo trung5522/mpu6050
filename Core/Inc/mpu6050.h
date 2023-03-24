@@ -31,7 +31,7 @@ typedef struct {
     double Gz;
 
     float Temperature;
-
+    double AngleZ;
     double KalmanAngleX;
     double KalmanAngleY;
 } MPU6050_t;
