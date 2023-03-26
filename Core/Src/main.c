@@ -253,34 +253,33 @@ char buf[4];
 		  lcd_send_string ("Ax=");
 		  sprintf (buf, "%.2f", MPU6050.KalmanAngleX);
 		  lcd_send_string (&buf);
-		  lcd_send_string ("g ");
+		 // lcd_send_string ("g ");
 
 		  lcd_send_cmd (0x80|0x40);  // goto 2,1
 		  lcd_send_string ("Ay=");
 		  sprintf (buf, "%.2f", MPU6050.KalmanAngleY);
 		  lcd_send_string (buf);
-		  lcd_send_string ("g ");
+		  //lcd_send_string ("g ");
 
-		  lcd_send_cmd (0x80|0x0B);  // goto 3,1
+		  lcd_send_cmd (0x80|0x09);  // goto 3,1
 		  lcd_send_string ("Az=");
 		  sprintf (buf, "%.2f", MPU6050.AngleZ);
 		  lcd_send_string (buf);
-		  lcd_send_string ("g ");
+		 // lcd_send_string ("g ");
 
-		  lcd_send_cmd (0x80|0x06);  // goto 1,11
-		  lcd_send_string ("Gx=");
-		  sprintf (buf, "%.2f", MPU6050.Gx);
-		  lcd_send_string (buf);
+		 //lcd_send_cmd (0x80|0x06);  // goto 1,11
+		  //lcd_send_string ("Gx=");
+		  //sprintf (buf, "%.2f", MPU6050.Gx);
+		  //lcd_send_string (buf);
 
-		  lcd_send_cmd (0x80|0x46);  // goto 2,11
-		  lcd_send_string ("Gy=");
-		  sprintf (buf, "%.2f", MPU6050.Gy);
-		  lcd_send_string (buf);
+		  //lcd_send_string ("Gy=");
+		  //sprintf (buf, "%.2f", MPU6050.Gy);
+		 // lcd_send_string (buf);
 
-		  lcd_send_cmd (0x80|0x4B);  // goto 3,11
-		  lcd_send_string ("Gz=");
-		  sprintf (buf, "%.2f", MPU6050.Gz);
-		  lcd_send_string (buf);
+//		  lcd_send_cmd (0x80|0x4B);  // goto 3,11
+//		  lcd_send_string ("Gz=");
+//		  sprintf (buf, "%.2f", MPU6050.Gz);
+//		  lcd_send_string (buf);
 
 		  HAL_Delay (250);  // wait for a while
 	     /* USER CODE END WHILE */
